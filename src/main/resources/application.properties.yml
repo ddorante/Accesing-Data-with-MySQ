@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url:
+      jdbc:
+        mysql: //127.0.0.1:3306/db_example?useSSL=false
+    username: springuser
+    password: ThePassword
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    database-platform: org.hibernate.dialect.MySQL5Dialect
